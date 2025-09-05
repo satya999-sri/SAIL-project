@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/student.js" defer></script>
+</head>
+<body>
+    <div class="home-container">
+        <h2>Student Dashboard</h2>
+        <p>Bus Available: <span id="busStatus">true</span></p>
+        <p>Next Bus Time: <span id="nextBusTime">14:30</span></p>
+        <p>Current Location: <span id="currentLocation">ARTC Gate 3</span></p>
+
+        <form id="requestBusForm">
+            <input type="text" id="studentName" placeholder="Enter Your Name">
+            <textarea id="studentMessage" placeholder="Enter Message / Extra Bus Needed"></textarea>
+            <button type="submit" class="submit-btn">Request Extra Bus</button>
+        </form>
+
+        <button id="studentLogoutBtn" class="submit-btn" style="margin-top:15px;">Logout</button>
+
+        <h3>Your Requests</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Message</th>
+                    <th>Request Time</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="studentRequestsBody">
+                <!-- Requests show here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
