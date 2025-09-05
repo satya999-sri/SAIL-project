@@ -1,0 +1,115 @@
+/* Global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d0f0c0, #f0f8ff);
+    color: #333;
+}
+
+/* Home Page */
+.home-container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home-container h1 {
+    font-size: 48px;
+    color: #fff;
+    background-color: rgba(0, 128, 64, 0.7);
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.home-buttons {
+    margin-top: 50px;
+}
+
+.home-buttons button {
+    font-size: 20px;
+    padding: 15px 40px;
+    margin: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #008040;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.home-buttons button:hover {
+    background-color: #008040;
+    color: #fff;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #008040;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Status Colors */
+.status-approved { color: green; font-weight: bold; }
+.status-pending { color: orange; font-weight: bold; }
+.status-rejected { color: red; font-weight: bold; }
+
+/* Buttons in Table Actions */
+.table-actions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.table-actions button.approve { background-color: #28a745; color: #fff; }
+.table-actions button.pending { background-color: #ffc107; color: #fff; }
+.table-actions button.reject { background-color: #dc3545; color: #fff; }
+
+.table-actions button:hover {
+    opacity: 0.8;
+}
+
+/* Forms */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button.submit-btn {
+    background-color: #008040;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.submit-btn:hover {
+    background-color: #006633;
+}
